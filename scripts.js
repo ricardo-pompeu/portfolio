@@ -34,13 +34,3 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTheme(e.matches ? 'dark' : 'light');
     });
 });
-
-
-
-/*
-<i data-lucide="volume-2" class="my-class"></i>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-lucide.createIcons();
-</script>
-*/
