@@ -1,19 +1,10 @@
-:root {
-    --dark-bg: #1E1E2E;
-    --dark-fg: #D9E0EE;
-    --dark-primary: #F5E0DC;
-    --dark-secondary: #F28FAD;
-    --dark-accent: #FAB387;
-    
-    --light-bg: #F4F4F8;
-    --light-fg: #1E1E2E; /* Adjusted to a darker color for readability */
-    --light-primary: #DF8E8E;
-    --light-secondary: #94E2D5;
-    --light-accent: #F9E2AF;
+:root{
+--accentcolor: #209fb5;
+--accentcolor-dark: #74c7ec;
 
-    --header-bg: #2E2E3E;
-    --footer-bg: #2E2E3E;
-    --button-bg: #3E3E5E;
+--text-color: #4c4f69;
+--text-color-dark: #cdd6f4;
+
 }
 
 body {
@@ -24,96 +15,193 @@ body {
 }
 
 .dark-mode {
-    background-color: var(--dark-bg);
-    color: var(--dark-fg);
+    background: #181825;
+    color: #cdd6f4;
 }
 
 .light-mode {
-    background-color: var(--light-bg);
-    color: var(--light-fg);
+    background-color: #eff1f5;
+    color: #4c4f69;
 }
 
 header {
-    background-color: var(--header-bg);
-    padding: 10px 20px;
+    padding: 0;
+    height: 60px;
+    padding: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
-    
-    
-    
+    top:0;
 }
 
-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+.light-mode header {
+    background: #bcc0cc;
+    color: #4c4f69;
 }
+
+.dark-mode header {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    }
 
 header nav ul {
+    padding: 0;
     list-style: none;
     display: flex;
     gap: 15px;
 }
 
 header nav ul li {
-    display: inline;
+    justify-content: center;
 }
 
-header nav ul li a,
-header nav ul li button {
-    color: inherit;
-    text-decoration: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font: inherit;
+
+header nav ul li a {
+text-decoration: none;
+cursor: pointer;
+font: inherit;
+padding-inline: 8px;
+height: 40px;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 4px;
+}
+ 
+ 
+.light-mode header nav ul li a {
+    color: #4c4f69;
 }
 
-header nav ul li button {
-    background-color: var(--button-bg);
-    border-radius: 5px;
-    padding: 5px 10px;
+.dark-mode header nav ul li a {
+   color: #cdd6f4;
 }
 
-header nav ul li a:hover,
-header nav ul li button:hover {
-    background-color: var(--dark-accent);
-    color: var(--dark-bg);
+header nav ul li a:hover {
+    border-radius: 4px;
 }
 
-.intro, #sobre, #documentacao {
-    padding: 20px;
-    text-align: center;
+.light-mode header nav ul li a:hover {
+    color: #4c4f69;
+    background: var(--accentcolor);
 }
 
-.intro h1, #sobre, h2, #documentacao h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.dark-mode header nav ul li a:hover {
+   color: #1e1e2e;
+   background: var(--accentcolor-dark);
 }
 
-.intro p, #sobre p, #documentacao p {
-    margin: 5px 0;
+.light-mode header nav ul li a:active {
+    color: #4c4f69;
+    background: var(--accentcolor);
 }
 
-.intro-img, .docs-img {
-    width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
-    border-radius: 10px;
+.dark-mode header nav ul li a:active {
+   color: #1e1e2e;
+   background: var(--accentcolor-dark);
 }
+
+/* botão de contraste */
+
+button {
+text-decoration: none;
+cursor: pointer;
+font: inherit;
+border: none;
+border-radius: 4px;
+padding: 8px;
+height: 40px;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 4px;
+}
+
+.light-mode button {
+background: var(--accentcolor);
+color: #4c4f69;
+}
+
+.dark-mode button {
+background: var(--accentcolor-dark);
+color: #1e1e2e;
+}
+
+
+
+
+
+
+/* PÁGINA INICIAL */
+
+/*INICIAL*/
+.light-mode #inicial {
+    display: grid;
+    font-size: 1rem;
+    padding: 30px;
+    padding-top: 90px;
+    justify-items: center;
+}
+
+.dark-mode #inicial {
+    display: grid;
+    font-size: 1rem;
+    padding: 30px;
+    padding-top: 90px;
+    justify-items: center;
+}
+
+
+
 
 section {
-    padding: 20px;
+    padding: 60px;
+    
 }
 
-h2 {
+.light-mode h1 {
+font-size: 2rem;
+color: var(--accentcolor);
+}
+
+.dark-mode h1 {
+font-size: 2rem;
+color: var(--accentcolor-dark);
+}
+
+.light-mode p {
+color: var(--text-color)
+}
+
+.light-mode h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 3rem;
+    color: var(--text-color);
 }
 
-ul {
+.dark-mode h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: var(--text-color-dark);
+}
+
+
+
+
+
+
+
+
+
+.dark-mode ul {
     list-style: none;
     padding: 0;
 }
@@ -158,56 +246,87 @@ ul li {
     border-radius: 8px;
 }
 
-footer {
-    background-color: var(--footer-bg);
+.light-mode footer {
+    background: #4c4f69;
     text-align: center;
     padding: 10px 0;
 }
+
+.dark-mode footer {
+    background: #11111b;
+    text-align: center;
+    padding: 10px 0;
+}
+
 
 footer p {
     margin: 5px 0;
 }
 
-/* Light mode specific styles */
-.light-mode header {
-    background-color: var(--light-bg);
-    color: var(--light-fg);
+
+
+
+
+/*imagens*/
+
+img.img1 {
+max-width: 700px;
+width: 100%;
+height: 100%;
+border-radius: 8px;
 }
 
-.light-mode header .logo {
-    color: var(--light-fg);
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+
+header nav ul li a {
+ font-size: 0;
+ gap: 0px;
+ padding-inline: 8px;
 }
 
-.light-mode header nav ul li a,
-.light-mode header nav ul li button {
-    color: var(--light-fg);
+body {
+    display: fixed;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.light-mode header nav ul li button {
-    background-color: var(--button-bg);
+
+
+ 
+
+header {
+bottom: 0;
+  
 }
 
-.light-mode header nav ul li a:hover,
-.light-mode header nav ul li button:hover {
-    background-color: var(--light-accent);
-    color: var(--light-bg);
+
+
+
+
 }
 
-.light-mode .intro, .light-mode #sobre, .light-mode #documentacao {
-    color: var(--light-fg);
-}
 
-.light-mode h1, .light-mode h2 {
-    color: var(--light-primary);
-}
 
-.light-mode .app {
-    background-color: var(--light-bg);
-    color: var(--light-fg);
-}
 
-.light-mode footer {
-    background-color: var(--light-bg);
-    color: var(--light-fg);
-}
+
+
+
+
+
+
+
 
