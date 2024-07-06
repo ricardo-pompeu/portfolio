@@ -1,6 +1,6 @@
 :root{
---accentcolor: #209fb5;
---accentcolor-dark: #74c7ec;
+--accentcolor: #7287fd;
+--accentcolor-dark: #b4befe;
 
 --text-color: #4c4f69;
 --text-color-dark: #cdd6f4;
@@ -24,6 +24,15 @@ body {
     color: #4c4f69;
 }
 
+.dark-mode a#toggle-theme {
+display: none;
+}
+
+.light-mode a#toggle-thema {
+display: none;
+}
+
+
 header {
     padding: 0;
     height: 60px;
@@ -33,11 +42,11 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
 }
 
 .light-mode header {
-    background: #bcc0cc;
+    background: #e6e9ef;
     color: #4c4f69;
 }
 
@@ -54,7 +63,7 @@ header nav ul {
 }
 
 header nav ul li {
-    justify-content: center;
+    display: contents;
 }
 
 
@@ -105,9 +114,15 @@ header nav ul li a:hover {
    background: var(--accentcolor-dark);
 }
 
+
+
+
 /* botão de contraste */
 
-button {
+
+.light-mode button {
+/*background: var(--accentcolor);*/
+color: #4c4f69;
 text-decoration: none;
 cursor: pointer;
 font: inherit;
@@ -123,14 +138,23 @@ align-content: center;
 gap: 4px;
 }
 
-.light-mode button {
-background: var(--accentcolor);
-color: #4c4f69;
-}
-
 .dark-mode button {
 background: var(--accentcolor-dark);
 color: #1e1e2e;
+text-decoration: none;
+cursor: pointer;
+font: inherit;
+border: none;
+border-radius: 4px;
+padding: 8px;
+height: 40px;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 4px;
+
 }
 
 
@@ -309,7 +333,7 @@ body {
  
 
 header {
-bottom: 0;
+position: fixed;
   
 }
 
@@ -320,6 +344,42 @@ bottom: 0;
 }
 
 
+@media only screen and (min-width: 801px) {
+
+
+
+header nav ul li a {
+ padding-inline: 8px;
+}
+
+body {
+    display: fixed;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+ 
+
+header {
+position: fixed;
+  
+}
+
+a#toggle-theme {
+background: var(--accentcolor);
+}
+
+a#toggle-thema {
+background: var(--accentcolor-dark);
+color: #1e1e2e;
+}
+
+
+
+
+}
 
 
 
