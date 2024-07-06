@@ -103,6 +103,7 @@ header nav ul li a:hover {
    background: var(--accentcolor-dark);
 }
 
+/*
 .light-mode header nav ul li a:active {
     color: #4c4f69;
     background: var(--accentcolor);
@@ -113,7 +114,7 @@ header nav ul li a:hover {
    background: var(--accentcolor-dark);
 }
 
-
+*/
 
 
 /* botão de contraste */
