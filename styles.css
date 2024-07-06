@@ -42,11 +42,10 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    top: 0;
 }
 
 .light-mode header {
-    background: #dce0e8;
+    background: #e6e9ef;
     color: #4c4f69;
 }
 
@@ -334,7 +333,7 @@ body {
 
 header {
 position: fixed;
-  
+bottom: 0 !important;
 }
 
 
@@ -364,6 +363,7 @@ body {
 
 header {
 position: fixed;
+top: 0;
   
 }
 
