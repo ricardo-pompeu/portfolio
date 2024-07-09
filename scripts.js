@@ -82,3 +82,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 50) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
+    });
+});
+
+
+        const texts = ["Portifólio", "Website", "Playground", "Conteúdo", "Mundo"];
+        let index = 0;
+        let charIndex = 0;
+        const dynamicTextElement = document.getElementById('dynamicText');
+        const typingSpeed = 200; // Velocidade de digitação em milissegundos
+        const erasingSpeed = 100; // Velocidade de apagar em milissegundos
+        const newTextDelay = 2000; // Tempo de espera antes de iniciar a digitação do próximo texto
+
+        function type() {
+            if (charIndex < texts[index].length) {
+                dynamicTextElement.textContent += texts[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                dynamicTextElement.textContent = texts[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingSpeed);
+            } else {
+                index = (index + 1) % texts.length;
+                setTimeout(type, typingSpeed + 500);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() { 
+            if(texts.length) setTimeout(type, newTextDelay + 250);
+        });
