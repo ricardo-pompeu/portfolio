@@ -163,7 +163,11 @@ color: var(--accentcolor-dark);
 
 
 
+.light-mode grid-bg-sobre p {
+color: var(var(--base-light))
 
+ 
+}
 
 
 
