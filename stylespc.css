@@ -241,12 +241,13 @@ gap:6em;
 
 .grid-apps-contatos {
   display: grid;
-  padding: 1em;
+  padding: 2em;
   margin-block: 1em;
   border-radius:10px;
-width: -moz-available;
+width: 100%;
   text-align: center;
   justify-items: center;
+  text-decoration: none;
 }
 
 
@@ -256,7 +257,11 @@ font-size: 1.3em;
 
 
 
-
+.grid-ctts{
+display: flex;
+gap: 2em;
+justify-content: center
+} 
 
 
 
@@ -305,8 +310,6 @@ justify-content: end;
   justify-items: end;
 }
 
-.grid-button-inicial {
-}
 
 
 
