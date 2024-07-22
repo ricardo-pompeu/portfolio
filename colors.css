@@ -163,8 +163,8 @@ color: var(--accentcolor-dark);
 
 
 
-.light-mode grid-bg-sobre p {
-color: var(var(--base-light))
+html body.light-mode section#sobre.sobre div.grid-bg-sobre p {
+color: var(--base-light) !important;
 
  
 }
