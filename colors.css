@@ -1,0 +1,229 @@
+:root {
+
+/*CATCCUPPIN https://catppuccin.com/palette */ 
+
+/*ACCENTCOLOR*/
+--accentcolor-light: #1e66f5;
+--accentcolor-dark: #89b4fa;
+
+
+/*cor de fundo*/
+--base-light: #eff1f5;
+--base-dark: #11111b;
+
+--mantle-light:#e6e9ef;
+--mantle-dark: #181825;
+
+--soft-light: #eff1f5;
+--soft-dark: #1e1e2e;
+
+
+
+
+/*cor dos textos(GERAL)*/
+--text-light: #4c4f69;
+--text-dark: #cdd6f4;
+
+
+/*navbar*/
+--nav-light: #dce0e8;
+--nav-dark: #24273a;
+--hoverbar-light: #ccd0da;
+--hoverbar-dark: #313244;
+
+
+
+}
+
+
+.light-mode {
+background: var(--base-light);
+color: var(--text-light);  
+}
+
+.dark-mode {
+background: var(--base-dark);
+color: var(--text-dark);
+}
+
+
+
+
+
+
+
+
+
+
+
+.light-mode .navgator {
+background: var(--nav-light);
+
+
+}
+
+.dark-mode .navgator {
+background: var(--nav-dark);
+
+
+}
+
+
+
+ {
+
+
+}
+
+
+.light-mode .paginator-nomes li a{
+color: var(--text-light);
+}
+
+.dark-mode .paginator-nomes li a{
+color: var(--text-dark);
+}
+
+
+
+.light-mode .paginator-nomes li a:hover {
+background: var(--hoverbar-light);
+
+}
+
+.dark-mode .paginator-nomes li a:hover {
+background: var(--hoverbar-dark);
+
+}
+
+.light-mode .paginator-icon li:hover {
+background: var(--hoverbar-light);
+
+}
+
+.dark-mode .paginator-icon li:hover {
+background: var(--hoverbar-dark);
+
+}
+
+
+
+
+/*REMOVE ICONS CONTRASTE DARK-LIGHT*/
+
+.light-mode #toggle-theme {
+display: none;
+
+}
+
+.dark-mode #toggle-thema {
+display: none;
+ 
+}
+
+
+
+
+
+
+
+
+/* botões*/
+
+.light-mode .grid-button-sobre button {
+background: var(--accentcolor-light);
+color: var(--base-light);
+}
+
+.dark-mode .grid-button-sobre button {
+background: var(--accentcolor-dark);
+color: var(--base-dark);
+}
+
+
+
+/*letras*/
+.light-mode p a {
+color: var(--accentcolor-light) ;
+}
+
+.dark-mode p a {
+color: var(--accentcolor-dark);
+}
+
+
+.light-mode p3 {
+color: var(--accentcolor-light) ;
+}
+
+.dark-mode p3 {
+color: var(--accentcolor-dark);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*projetos*/
+.light-mode .grid-bg-apps {
+background: var(--mantle-light);
+
+}
+
+.dark-mode .grid-bg-apps {
+background: var(--mantle-dark);
+
+}
+
+
+.light-mode .grid-apps-hbl {
+background: var(--mantle-light);
+
+}
+
+.dark-mode .grid-apps-hbl {
+background: var(--mantle-dark);
+
+}
+
+.light-mode .grid-apps-contatos {
+background: var(--mantle-light);
+color: var(--text-light);
+}
+
+.dark-mode .grid-apps-contatos {
+background: var(--mantle-dark);
+color: var(--text-dark);
+}
+
+
+
+
+.light-mode .grid-apps-contatos:hover{
+background: #dce0e8;
+
+}
+
+.dark-mode .grid-apps-contatos:hover{
+background: var(--soft-dark);
+
+}
+
+
+
+
+
+
+
+
