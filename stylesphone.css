@@ -21,16 +21,17 @@ display: flex;
 margin: 0;
 list-style: none;
 justify-content: center;
-padding-inline: 2rem;
 position: fixed;
 top:0;
-width: -moz-available;
+width: 100vw;
 z-index: 1000;
 height: 56px;
+padding:0;
 }
 
 .paginator-nomes {
 display: flex;
+margin-block:8px;
 }
 
 .paginator-nomes li{
@@ -45,7 +46,6 @@ display: flex;
 text-decoration: none;
 align-items: center;
 padding: 10px;
-margin: 10px;
 
 }
 
@@ -61,13 +61,13 @@ border-radius:4px;
 
 .paginator-icon {
 display: flex;
+margin-block:8px;
 }
 
 .paginator-icon li {
 display: flex;
 align-items: center;
 padding: 10px;
-margin: 10px;
 cursor: pointer;
 
 
@@ -239,12 +239,12 @@ display: grid;
 
 .grid-apps-contatos {
   display: grid;
-  padding: 1em;
+  padding: 2em;
   margin-block: 1em;
   border-radius:10px;
-width: -moz-available;
   text-align: center;
-  justify-items: center;
+  justify-content: center;
+  gap:6px;
 }
 
 
@@ -253,21 +253,14 @@ font-size: 1.3em;
 }
 
 
+.grid-ctts {
+display: grid;
 
+}
 
-
-
-
-
-
-
-
-
-
-.grid-bg-contatos a {
-display: flex;
+.grid-ctts a{
 text-decoration: none;
-width: -moz-available;
+display: flex;
 }
 
 
@@ -298,9 +291,6 @@ order: 1;
   display: grid;
   align-items: center;
  
-}
-
-.grid-button-inicial {
 }
 
 
