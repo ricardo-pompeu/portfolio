@@ -23,15 +23,17 @@ list-style: none;
 justify-content: center;
 position: fixed;
 top:0;
-width: 100vw;
+width: -moz-available;
 z-index: 1000;
 height: 56px;
-padding:0;
+padding-inline: 1em;
 }
 
 .paginator-nomes {
 display: flex;
 margin-block:8px;
+width: 100%;
+justify-content: space-around;
 }
 
 .paginator-nomes li{
@@ -46,7 +48,7 @@ display: flex;
 text-decoration: none;
 align-items: center;
 padding: 10px;
-margin-inline: 6px;
+
 }
 
 
@@ -58,10 +60,36 @@ border-radius:4px;
 
 /*ÍCONES DE CONTRASTE*/
 
+.light-mode .paginator-nomes li.contrast-light {
+display: none;
+}
+
+.dark-mode .paginator-nomes li.contrast-dark {
+display: none;
+}
+
+
+
+.paginator-nomes li.contrast-light {
+cursor: pointer;
+}
+
+.paginator-nomes li.contrast-dark {
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 .paginator-icon {
 display: flex;
 margin-block:8px;
+display: none;
 }
 
 .paginator-icon li {
@@ -69,7 +97,6 @@ display: flex;
 align-items: center;
 padding: 10px;
 cursor: pointer;
-margin-inline: 6px;
 
 
 
@@ -108,28 +135,35 @@ p a {
 text-decoration: none;
 }
 
+p3 {
+margin-top: 0.4em;
+}
+
+
+
+
+
+
+
 
 
 
 
 .grid-bg-sobre {
 background: url(src/imagem/3.gif);
-padding: 4em;
+padding: 2em;
 border-radius: 10px;
 }
 
 .grid-button-sobre {
-margin: 2em;
+  margin-block: 2em;
   justify-content: center;
   display: flex;
+  gap: 1em;
 
 }
 
 
-.grid-button-sobre button {
-margin-inline: 1em;
-
-}
 
 
 
@@ -141,19 +175,18 @@ margin-inline: 1em;
 
 
 .grid-bg-apps img {
-width: 100px;
+width: 80px;
 }
 
 
 .grid-bg-projetos {
 display: grid;
-justify-content: center;
 gap: 4em;
 }
 
 .grid-bg-apps {
 display: grid;
-padding: 2em;
+padding: 1em;
 text-align: center;
 border-radius: 10px;
 justify-items: center;
@@ -164,6 +197,10 @@ width: -moz-available;
 .grid-bg-apps p1 {
 font-weight: bold;
 margin: 0.6em;
+display: flex;
+align-items: center;
+cursor: pointer;
+gap:4px;
 }
 
 .projetos p {
@@ -172,6 +209,18 @@ margin-block: 2em;
 
 
 
+.grid-bg-apps a {
+    
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    gap: 8px;
+    margin-block: 0.8em;
+    align-items: center;
+
+
+}
 
 
 
@@ -306,12 +355,12 @@ order: 1;
 button{
 border: none;
 padding: 10px;
-border-radius: 4px;
+border-radius: 10px;
 font-weight: bold;
 cursor: pointer;
 align-items: center;
-display: flex;
-gap: 6px;
+display: grid;
+justify-items: center;
 }
 
 
