@@ -136,13 +136,13 @@ display: none;
 /* botões*/
 
 .light-mode .grid-button-sobre button {
-background: var(--accentcolor-light);
-color: var(--base-light);
+background: var(--mantle-light);
+color: var(--text-light);
 }
 
 .dark-mode .grid-button-sobre button {
-background: var(--accentcolor-dark);
-color: var(--base-dark);
+background: var(--mantle-dark);
+color: var(--text-dark);
 }
 
 
