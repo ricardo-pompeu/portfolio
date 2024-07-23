@@ -111,6 +111,13 @@ background: var(--hoverbar-dark);
 
 /*REMOVE ICONS CONTRASTE DARK-LIGHT*/
 
+
+
+
+
+
+
+
 .light-mode #toggle-theme {
 display: none;
 
@@ -120,8 +127,6 @@ display: none;
 display: none;
  
 }
-
-
 
 
 
@@ -163,11 +168,7 @@ color: var(--accentcolor-dark);
 
 
 
-html body.light-mode section#sobre.sobre div.grid-bg-sobre p {
-color: var(--base-light) !important;
 
- 
-}
 
 
 
@@ -201,6 +202,20 @@ background: var(--mantle-dark);
 
 }
 
+.light-mode .grid-bg-apps a:hover {
+color: var(--accentcolor-light);
+}
+
+
+
+
+.dark-mode .grid-bg-apps a:hover {
+color: var(--accentcolor-dark);
+}
+
+
+
+/*------------------------CONTATOS--------------------------------*/
 .light-mode .grid-apps-contatos {
 background: var(--mantle-light);
 color: var(--text-light);
