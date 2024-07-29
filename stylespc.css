@@ -23,7 +23,8 @@ justify-content: space-between;
 padding-inline: 3em;
 position: fixed;
 top:0;
-width: -moz-available;
+width: -moz-available; /*firefox*/
+width: -webkit-fill-available; /*chromium*/
 z-index: 1000;
 height: 56px;
 }
