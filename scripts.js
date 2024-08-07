@@ -220,7 +220,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-        const texts = ["Portifólio", "Website", "Playground", "Conteúdo", "Mundo"];
+        const texts = ["Portfólio", "Web-site", "Playground", "Conteúdo", "Mundo"];
         let index = 0;
         let charIndex = 0;
         const dynamicTextElement = document.getElementById('dynamicText');
