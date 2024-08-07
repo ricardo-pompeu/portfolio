@@ -70,7 +70,7 @@ background: var(--nav-dark);
 
 
 
- {
+{
 
 
 }
@@ -147,6 +147,20 @@ color: var(--text-dark);
 
 
 
+.light-mode .grid-button-sobre button:hover {
+background: #dce0e8;
+}
+
+.dark-mode .grid-button-sobre button:hover {
+background: var(--soft-dark);
+}
+
+
+
+
+
+
+
 /*letras*/
 .light-mode p a {
 color: var(--accentcolor-light) ;
@@ -183,13 +197,26 @@ color: var(--accentcolor-dark);
 /*projetos*/
 .light-mode .grid-bg-apps {
 background: var(--mantle-light);
-
+cursor: pointer;
 }
 
 .dark-mode .grid-bg-apps {
 background: var(--mantle-dark);
+cursor: pointer;
+}
+
+.light-mode .grid-bg-apps:hover {
+background: #dce0e8;
 
 }
+
+.dark-mode .grid-bg-apps:hover {
+background: var(--soft-dark);
+}
+
+
+
+
 
 
 .light-mode .grid-apps-hbl {
@@ -202,16 +229,7 @@ background: var(--mantle-dark);
 
 }
 
-.light-mode .grid-bg-apps a:hover {
-color: var(--accentcolor-light);
-}
 
-
-
-
-.dark-mode .grid-bg-apps a:hover {
-color: var(--accentcolor-dark);
-}
 
 
 
@@ -243,6 +261,9 @@ background: var(--soft-dark);
 
 
 
+.light-mode section#sobre.sobre div.grid-bg-sobre p {
 
+    color: var(--text-dark)
+}
 
 
