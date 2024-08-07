@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 920px) {
 
 
 
@@ -23,7 +23,8 @@ list-style: none;
 justify-content: center;
 position: fixed;
 top:0;
-width: 100%;
+width: -moz-available;
+width: -webkit-fill-available;
 z-index: 1000;
 height: 56px;
 padding: 0;
@@ -34,7 +35,6 @@ display: flex;
 margin-block:8px;
 width: 100%;
 justify-content: space-around;
-padding-inline: 1em;
 }
 
 .paginator-nomes li{
@@ -192,6 +192,7 @@ text-align: center;
 border-radius: 10px;
 justify-items: center;
 width: -moz-available;
+width:-webkit-fill-available;
 }
 
 
@@ -355,13 +356,15 @@ order: 1;
 
 button{
 border: none;
-padding: 10px;
+padding-block: 10px;
 border-radius: 10px;
 font-weight: bold;
 cursor: pointer;
 align-items: center;
 display: grid;
 justify-items: center;
+width: -moz-available;
+width: -moz-available;
 }
 
 
